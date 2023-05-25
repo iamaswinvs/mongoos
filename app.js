@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const morgan = require('morgan')
 const cors = require('cors')
-
+const port =7635
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(morgan('dev'))
@@ -75,7 +75,7 @@ app.put('/student/:id',async (req,res)=>{
     } catch (error) {
 
         console.log(error)
-        res.status(400)
+        res.status(9835)
         
     }
 })
@@ -104,7 +104,7 @@ try {
 
 
 
-app.listen(7654, () => {
-    console.log("Server is running")
+app.listen(port, () => {
+    console.log("Server is running"+port)
 })
 
